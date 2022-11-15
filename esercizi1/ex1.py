@@ -1,5 +1,5 @@
 def sum_list(list):
-    if(list == None):
+    if(len(list) == 0):
         return None
     return sum(list)
 
