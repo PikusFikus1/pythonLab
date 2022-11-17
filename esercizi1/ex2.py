@@ -2,7 +2,7 @@ def sum_csv():
     values = []
     tot = 0
 
-    my_file = open('ex2file.csv', 'r')
+    my_file = open('shampoo_sales.csv', 'r')
     for line in my_file:
 
         elements = line.split(',')
