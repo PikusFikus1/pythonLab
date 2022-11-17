@@ -8,8 +8,7 @@ def sum_list():
         elements = line.split(',')
 
         if elements[0] != 'Date':
-            date = elements[0]
             value = elements[1]
-            tot += float(value)
-            print(tot)
-    return tot
+            values.append(float(value))
+    return sum(values)
+
