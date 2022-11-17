@@ -1,4 +1,4 @@
-def sum_list():
+def sum_csv():
     values = []
     tot = 0
 
