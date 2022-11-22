@@ -1,8 +1,9 @@
 def sum_csv(file_name):
     values = []
-    tot = 0
 
     my_file = open(file_name, 'r')
+    if my_file == 0:
+        return None
     for line in my_file:
 
         elements = line.split(',')
