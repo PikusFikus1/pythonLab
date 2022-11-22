@@ -1,6 +1,6 @@
 class CSVFile():
 
-    def __inti__(self, name):
+    def __init__(self, name):
         self.name = name
         
     def get_data(self):
@@ -11,4 +11,3 @@ class CSVFile():
             elements = line.split(',')
             myList.append(elements)
         return myList
-
