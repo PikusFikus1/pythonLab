@@ -9,6 +9,10 @@ class CSVFile():
         
         for line in my_file:
             elements = line.split(',')
+            elements[1] = elements[1].strip('\n')
             myList.append(elements)
+            myList
         return myList
 
+myFile = CSVFile('shampoo_sales.csv')
+print(myFile.get_data())
