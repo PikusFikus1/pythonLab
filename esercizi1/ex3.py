@@ -11,3 +11,4 @@ class CSVFile():
             elements = line.split(',')
             myList.append(elements)
         return myList
+
