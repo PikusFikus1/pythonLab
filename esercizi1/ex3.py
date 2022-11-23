@@ -13,6 +13,3 @@ class CSVFile():
             myList.append(elements)
             myList
         return myList
-
-myFile = CSVFile('shampoo_sales.csv')
-print(myFile.get_data())
