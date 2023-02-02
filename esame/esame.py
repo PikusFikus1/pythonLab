@@ -64,13 +64,3 @@ def compute_daily_max_difference(time_series_list):
     append_selector()    #differenza massima dell'ultimo giorno
         
     return (max_difference_list)
-    
-
-time_series_file = CSVTimeSeriesFile(name='data.csv')
-
-time_series = time_series_file.get_data()
-
-our_list = compute_daily_max_difference(time_series)
-
-for i,item in enumerate(our_list):
-    print(item)
