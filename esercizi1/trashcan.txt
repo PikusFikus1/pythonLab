@@ -1,0 +1,16 @@
+my_file = open(file_name, 'r')
+    print(my_file.read())
+    #if my_file.read() == '':
+        #return None
+    for line in my_file:
+
+        elements = line.split(',')
+
+        if elements[0] != 'Date':
+            #try:
+                value = elements[1]
+                print(value)
+                values.append(float(value))
+            #except:
+                #pass
+    print(values)

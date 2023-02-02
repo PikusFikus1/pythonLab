@@ -8,8 +8,9 @@ class CSVFile():
         my_file = open(format(self.name), 'r')
         
         for line in my_file:
-            elements = line.split(',')
-            elements[1] = elements[1].strip('\n')
-            myList.append(elements)
-            myList
+            elements = line.strip()
+            elements = elements.split(',')
+            if len(elements[0])!=0 and len(elements[1])!=0:
+                if elements[0]!="Date":
+                    myList.append(elements)
         return myList
